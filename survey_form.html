@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>survey form</title>
+  </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <!-- 
+        
+        Hello Camper!
+        
+        For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+        
+        - The freeCodeCamp Team 
+        
+        -->
+        <header>
+          <h1 id="title">Survey Form</h1>
+        </header>  
+        <p id="description">*Please let me know how to improve my work. Thanks!</p>
+          <form id="survey-form">
+            <label for="name" id="name-label" >NAME:  <br></label>
+            <input type="text" id="name" name="name" placeholder="For example:Lily" required>
+            <br>
+            <br>
+            <label for="email" id="email-label">EMAIL:
+              <br></label>
+            <input type="email" id="email" name="email" placeholder="For example: lily@***.com" required>
+            <br>
+            <br>
+            <label for="number" id="number-label">AGE:
+              <br></label>
+            <input type="number" id="number" name="age" placeholder="For example: 8" min="1" max="120" required>
+            <br>
+            <p>*Which option best describes your current role?</p>
+            <select id="dropdown" name="curentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option value="Full-time wife">Full-time wife</option>
+              <option value="Student">Student</option>
+              <option value="no child">No child</option>
+              <option value="one child">One child</option>
+              <option value="two children or more">Two children or more</option> 
+              <option value="perfer not to say">Perfer not to say</option>
+            </select>
+          <br>   
+          <!--   <section>
+        <p>*Which one is your favorite?</p>
+        <input id="radio1" type="radio" name="radiobutton" value="1" /><label>need more good recommends</label><br/>
+        <input id="radio2" type="radio" name="radiobutton" value="2" /><label>need more free parent-child courses</label><br/>
+        <input id="radio3" type="radio" name="radiobutton" value="3" /><label>need more interesting arcticles</label><br/>
+        </section>   -->
+        
+          <input type="radio" name="gender" value="male" id="male">
+          <label for="male">Male</label><br>
+          <input type="radio" name="gender" value="female" id="female">
+          <label for="female">Female</label><br>
+          <input type="radio" name="gender" value="other" id="other">
+          <label for="other">Other</label><br>
+          <input type="radio" name="gender" value="prefernottosay" id="prefernottosay">
+          <label for="prefernottosay">Prefer Not To Say</label>
+        
+          <p>*Which articles are you like?</p>
+          <label><input type="checkbox" name="food-type" value="1">Healthy Food</label><br>
+          <label><input type="checkbox"  name="food-type"  value="2">Exercise</label><br>
+          <label><input type="checkbox"  name="food-type" value="3">Games</label><br>
+          <label><input type="checkbox"  name="food-type"  value="4">Books</label><br>
+          <label><input type="checkbox"  name="food-type"  value="5">Parent-child toys</label>
+        
+          <p>*Any Comments or Suggestions?</p>      
+            <textarea style="height:50px;resize:vertical" placeholder="Please write your comment here..." required></textarea><br>
+            <button type="submit" id="submit">Submit
+            </button>
+            </form>
+        
+    </body>
+</html>
