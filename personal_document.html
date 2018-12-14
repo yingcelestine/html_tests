@@ -1,37 +1,48 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <title>personal Document</title>
 
 
 
 
 
-<html>
 
 
 
-<head>
-    <title> personal document</title>
+
+
+
+
     <style>
+        body {
+            background: pink;
+            width: 300px;
+            height: 978px;
+        }
 
+        @media (max-width:450px) {
+            body {
+                background: yellowgreen;
+            }
+        }
+
+        #navbar {
+            margin-top: -20px;
+            position: fixed;
+        }
+
+        #welcome-section {
+            height: 978px;
+        }
     </style>
 </head>
 
-<body>
+<body id="body">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!-- 
@@ -43,15 +54,35 @@ For now, the test suite only works in Chrome! Please read the README below in th
 - The freeCodeCamp Team 
 
 -->
+    <nav id="navbar">
+        <a href="#welcome-section" class="link">welcome</a>
+        <a href="#projects" class="link">projects</a>
+        <a href="#project1" class="link">project1</a>
+        <a href="#project2" class="link">project2</a>
+    </nav>
+
     <section id="welcome-section">
         <h1>Ying.Celestine's Blog</h1>
     </section>
-    <section id="projects" class="project-tile">
-        <a href="">project</a>
-        <nav id="navbar">
-            <a href="#welcome-section">navbar</a>
-            <a id="profile-link" href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">Open my FCC</a>
-        </nav>
+
+
+    <section id="projects">
+        <h2><a href="https://codepen.io/freeCodeCamp/pen/MJjpwO">projects</a></h2>
+        <p>Learning is very important part of my life.</p>
+        <section id="project1" class="project-tile">
+            <h3>project1</h3>
+            <p>
+                    Michael Cohen, President Trump's former lawyer and fixer, says he is being forced to take responsibility for Trump's "dirty deeds." In an interview with ABC News, Cohen says that during the 2016 presidential campaign, Trump ordered him to arrange hush-money payments to two women and that the candidate knew it was illegal.
+            </p>
+        </section>
+        <section id="project2" class="project-tile">
+            <h3>project2</h3>
+            <p>
+                    Michael Cohen, President Trump's former lawyer and fixer, says he is being forced to take responsibility for Trump's "dirty deeds." In an interview with ABC News, Cohen says that during the 2016 presidential campaign, Trump ordered him to arrange hush-money payments to two women and that the candidate knew it was illegal.
+            </p>
+        </section>
+        <a id="profile-link" href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" target="_blank">Open
+            my FCC</a>
     </section>
 </body>
 
