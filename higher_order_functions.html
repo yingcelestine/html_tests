@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        const timeFuncRuntime = funcParameter => {
+            let t1 = Date.now();
+            const result = funcParameter();
+            console.log("result of funcParameter: ", result);
+            let t2 = Date.now();
+            return t2 - t1;
+        }
+
+
+
+        const addition = (n) => {
+            let sum = 0;
+            for (let i = 1; i < n; i++) { sum += i; }
+            return sum;
+        };
+
+        const timeTaken = timeFuncRuntime(addition);
+        console.log("addition has taken so much time: ", timeTaken);
+
+        const add = (a, b) => {return a + b;}
+        const times = (a, b) => {return a * b;}
+        const calculate = (func, a, b) => {return func(a, b);}
+        const result1 = calculate(add, 1, 2);
+        const result2 = calculate(times, 3, 4);
+        console.log("result of add: ", result1);
+        console.log("result of times: ", result2);
+
+        const addANumber = (a) => {
+            const func = (b) => {return a + b;}
+            return func;
+        }
+        const add3 = addANumber(3);
+        console.log("result of add3(5)", add3(5));
+        const add4 = addANumber(4);
+        console.log("result of add3(5)", add4(5));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
